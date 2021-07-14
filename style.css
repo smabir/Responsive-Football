@@ -1,0 +1,304 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------
+--- Common ---
+----------- */
+.button {
+    background-color: #E02C6D;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0;
+}
+.button i {
+    padding: 0;
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+.button p {
+    margin: 0;
+}
+
+/* -----------------
+---- Top Section ---
+-------------------- */
+
+/* ----------------
+---- Header ----
+---------------- */
+main {
+    background-color: #2D25A0;
+}
+.main-div {
+    max-width: 90%;
+    margin: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 40px;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul a {
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-left: 0;
+    color: #FFFFFF;
+}
+
+/* ----------------
+---- Main Section ----
+---------------- */
+.main-section {
+    display: flex;
+}
+.conmebol {
+    width: 50%;
+    margin-left: 30px;
+}
+.conmebol div h1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.conmebol-img {
+    width: 50%;
+}
+.conmebol-img img {
+    width: 85%;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+/* -----------
+----Players----
+----------- */
+.players {
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player {
+    width: 300px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 27px;
+}
+.player img {
+    width: 300px;
+    height: 256px;
+}
+
+/* -------------
+--- Messi Section ---
+---------------- */
+.messi-section {
+    background-color:#2D25A0;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+.leo-messi {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 20px;
+}
+.leo-messi h1 {
+    color: white;
+}
+.leo-messi-p {
+    color: white;
+    margin-bottom: 20px;
+}
+.messi-img {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.messi-img img {
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ------------------------ 
+--- Best Players Section ---
+-------------------------- */
+.best-players-h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.best-players {
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    margin: 0;
+}
+.best-players-div {
+    width: 88%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 100px;
+}
+.player-1 {
+    width: 50%;
+    margin-right: 30px;
+    box-shadow: 10px 10px 40px gray;
+    padding: 0px 5px 60px 40px;
+    border-image: linear-gradient(#96db5d, #20ee0d)10;
+    border-left: 8px solid;
+    
+}
+.player-2 {
+    width: 50%;
+    margin-left: 30px;
+    box-shadow: 10px 10px 40px gray;
+    padding: 0px 5px 60px 40px;
+    border-left: 8px solid;
+    border-image: linear-gradient(#dbd950, #e4e012)10;
+}
+.player-3 {
+    width: 50%;
+    margin-left: 30px;
+    box-shadow: 10px 10px 40px gray;
+    padding: 0px 5px 60px 40px;
+    border-left: 8px solid;
+    border-image: linear-gradient(#64e9e9, #1d3ae2)10;
+}
+.p-img {
+    width: 60%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+/* --------------------
+-- Football logo section --
+---------------------- */
+.football-logo img {
+    width: 483px;
+    height: 100;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* -------------
+--- social Icons ---
+--------------- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons i {
+    width: 40px;
+    height: 40px;
+    color: gray;
+    margin: 0 5px;
+}
+
+/* -----------
+--- Footer ---
+------------ */
+footer p {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .header {
+        display: none;
+    }
+    .main-section {
+        display: inline-block;
+    }
+    .conmebol-img img {
+        width: 180%;
+        margin-bottom: 70px;
+        margin-top: 30px;
+       margin-left: 0;
+}
+.conmebol div h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.players {
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: unset;
+}
+.messi-img img {
+    margin: unset;
+    display: unset;
+    justify-content: unset;
+ 
+}
+.button {
+    background-color: #E02C6D;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.messi-section {
+    display: inline-block;
+    align-items: center;
+}
+.messi-img img {
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
+}
+.leo-messi {
+    width: 100%;
+    margin: 0 20px 0 30px;
+}
+.best-players-div {
+    width: 100%;
+    display: inline;
+    margin-bottom: 100px;
+}
+.player-1 {
+    width: 100%;
+}
+.player-2 {
+    width: 100%;
+    margin-left: 0;
+}
+.player-3 {
+    width: 100%;
+    margin-left: 0;
+}
+.football-logo img {
+    margin-top: 60px;
+    width: 70%;
+}
+
+}
