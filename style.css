@@ -61,6 +61,13 @@ nav ul a {
 .main-section {
     display: flex;
 }
+.main-section {
+    transition: transform 250ms;
+  }
+  
+  .main-section:hover {
+    transform: translateY(-10px);
+  }
 .conmebol {
     width: 50%;
     margin-left: 30px;
@@ -118,6 +125,13 @@ nav ul a {
     display: flex;
     align-items: center;
 }
+.messi-section {
+    transition: transform 250ms;
+  }
+  
+  .messi-section:hover {
+    transform: translateY(-10px);
+  }
 .leo-messi {
     width: 50%;
     margin-left: 0;
